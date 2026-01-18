@@ -1,6 +1,20 @@
 //  Task 1
 // Кнопка .b-1 запускає функцію fn1. Функція повинна виводити в .out-1 рядок вигляду:
-//     1_2_3_4_5_6_7_8_9_10_11_12_13_14_15_16_
+//1_2_3_4_5_6_7_8_9_10_11_12_13_14_15_16_
+//.out-1 рядок вигляду
+const btn1 = document.querySelector(".b-1");
+const out1 = document.querySelector(".out-1");
+btn1.onclick = f1;
+
+function f1() {
+let result = "";
+for (let i = 1; i <= 16; i+=1) {
+console.log(i);
+result += `${i}_`;
+}
+out1.textContent = result;
+}
+
 // Роздільник - нижнє підкреслення. Завдання вирішується за допомогою циклу.
 const b1 = document.querySelector("button.b-1");
 const out1 = document.querySelector("div.out-1");
@@ -158,7 +172,43 @@ function fn9() {
     }
 }
 
-//  Task 10
+function fn9(){
+const input1 = Number(document.querySelector(".i-91").value);
+const input2 = Number(document.querySelector(".i-92").value);
+let output = "";
+
+if (input1 > input2) {
+  for (let i = input2; i <= input1; i++) {
+    output += `${i}_`;
+}
+} else {
+  for (let i = input1; i <= input2; i++) {
+    output += `${i}_`;
+  }
+  }
+//  document.querySelector(".out-9").textContent = output;
+//  }
+//  document.querySelector(".b-9").onclick = fn9;
+
+//2 sposib ternar
+
+function fn9() {
+const input1 = Number(document.querySelector(".i-91").value);
+const input2 = Number(document.querySelector(".i-92").value);
+let output = "";
+
+const min = input1 > input2 ? input2 : input1;
+const min = input1 > input2 ? input1 : input2;
+
+for (let i = min; i < max; i++) {
+  output += `${i}_`;
+}
+}
+
+ 
+
+
+//  Task 10    photo screen 15.01.26
 // Кнопка .b-10 запускає функцію fn10. Функція повинна виводити в .out-10 парні роки від 1950 до 1970 включно.
 // Роздільник - знак підкреслення. Завдання вирішується через цикл, а парність - через крок (рівний 2).
 const b10 = document.querySelector("button.b-10");
@@ -189,6 +239,8 @@ const divs11 = document.querySelectorAll("div.div-11");
     }
 }
 
+
+
 //  Task 12
 // Кнопка .b-12 запускає функцію fn12. Функція повинна:
 // - отримати всі div.div-12
@@ -205,6 +257,11 @@ const divs12 = document.querySelectorAll("div.div-12");
     }
 }
 
+for (let i = 0; i < elems.length; i++) {
+  elems[i].style.background = ‘orange’;
+  
+}
+}
 //  Task 13
 // За допомогою циклу привласніть всім input .i-13 value рівне:
 // - для першого  1
