@@ -1,0 +1,67 @@
+.products-card {
+}
+
+.products-card-ill {
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.products-card-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #080c09;
+  margin-bottom: 8px;
+}
+
+.products-card-colors {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 24px);
+  grid-auto-flow: row;
+  gap: 16px;
+  margin-bottom: 8px;
+
+  li {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.products-card-price {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #080c09;
+  margin-bottom: 16px;
+}
+
+.products-card-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 8px;
+  border-radius: 100px;
+  padding: 10px 24px;
+  width: 310px;
+  height: 46px;
+  box-shadow:
+    0 1px 2px 0 rgba(8, 12, 9, 0.05),
+    inset 0 -2px 1px 0 rgba(8, 12, 9, 0.05),
+    inset 0 0 0 1px rgba(8, 12, 9, 0.05);
+  background: rgba(8, 12, 9, 0.05);
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #080c09;
+  transition: 250ms;
+
+  &:hover {
+    background: #6b0609;
+  }
+}

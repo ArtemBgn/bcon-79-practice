@@ -5,6 +5,9 @@ ul {
   list-style: none;
 }
 
+img {
+  object-fit: cover;
+}
 .card-meta {
   display: flex;
   align-items: center;

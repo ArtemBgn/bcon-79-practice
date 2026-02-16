@@ -1,5 +1,5 @@
 {
-  "name": "furniture-sote",
+  "name": "booksy-project",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -19,6 +19,7 @@
     "vite-plugin-html-inject": "^1.1.2"
   },
   "dependencies": {
-    "axios": "^1.13.5"
+    "axios": "^1.13.5",
+    "swiper": "^12.1.0"
   }
 }
